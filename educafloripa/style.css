@@ -1,0 +1,148 @@
+/* Reset de estilos padrão do navegador */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .user a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Estilo do banner */
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo do carrossel de cursos */
+.carrossel {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.carrossel .curso {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrossel .curso i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do formulário de contato */
+.contato {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contato h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contato label, .contato input, .contato textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contato label {
+    font-weight: bold;
+}
+
+.contato textarea {
+    height: 120px;
+}
+
+.contato button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
