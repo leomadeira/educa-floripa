@@ -54,8 +54,8 @@ header .user a {
 }
 
 .banner img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 500px;
 }
 
 /* Estilo do carrossel de cursos */
@@ -128,14 +128,21 @@ footer {
 }
 
 /* Estilo do cabeçalho */
+
+/* Estilo do cabeçalho */
 header {
     background-color: #333;
-    color: #fff;
     padding: 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0; /* Remover a margem inferior */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0; /* Remover a margem das listas */
 }
 
 header .logo h1 {
@@ -146,3 +153,12 @@ header .logo h1 {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
+/* Estilo da div container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Outros estilos (mantenha os estilos existentes) */
