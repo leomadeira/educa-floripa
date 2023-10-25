@@ -14,6 +14,7 @@ body {
 }
 
 /* Estilo do cabeçalho */
+/* Estilo inicial do cabeçalho */
 header {
     background-color: #333;
     color: #fff;
@@ -22,14 +23,67 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
+    transition: background-color 0.3s ease; /* Efeito de transição para a mudança de cor de fundo */
 }
 
-header .logo img {
-    max-width: 100px;
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para o menu fixo */
+.menu-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #333; /* Cor de fundo quando o menu estiver fixo */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Sombra quando o menu estiver fixo */
+}
+
+/* Efeitos de transição para os links do menu */
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Efeito de transição para a mudança de cor do link */
+}
+
+/* Estilo para os links do menu quando o mouse está sobre eles */
+header nav ul li a:hover {
+    color: #FFA500; /* Cor de destaque quando o mouse estiver sobre o link */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px; /* Adicionar preenchimento interno para o conteúdo do cabeçalho */
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 header nav ul {
     list-style: none;
+    margin: 0;
 }
 
 header nav ul li {
@@ -47,6 +101,7 @@ header .user a {
     color: #fff;
     margin-right: 10px;
 }
+
 
 /* Estilo do banner */
 .banner {
@@ -156,9 +211,162 @@ header .logo h1 {
 
 /* Estilo da div container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 1200px;
 }
 
 /* Outros estilos (mantenha os estilos existentes) */
+
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFA500;
+}
+
+header .user a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo do formulário no modal */
+.modal form {
+    text-align: center;
+}
+
+.modal form input[type="text"],
+.modal form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+
+/* Estilo para o link "Esqueci a senha" */
+.forgot-password {
+    text-decoration: none;
+    color: #333;
+    margin: 10px 0;
+    display: block;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: #ff0000;
+    margin: 10px 0;
+}
+
+/* Estilos adicionais, como posicionamento e design dos campos e botões, podem ser adicionados conforme necessário. */
+/* Estilo para o botão "Registrar/Login" */
+header .user a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Estilo para o botão "Registrar" */
+#registerBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Estilo para o botão "Login" */
+#loginBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
